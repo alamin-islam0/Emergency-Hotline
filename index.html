@@ -34,7 +34,7 @@
                 <button
                     class="inline-flex items-center gap-1 px-4 py-2 rounded-2xl bg-[#41ff6b1a] text-black hover:bg-midnight transition">
                     <img src="resources/point.svg" alt="Arrow Icon" class="w-5 h-5" />
-                    <span class="font-inter text-[16px] text-black font-bold">100</span>
+                    <span id="coins" class="font-inter text-[16px] text-black font-bold">100</span>
                 </button>
                 <button
                     class="pl-7 pr-7 inline-flex items-center gap-1 px-4 py-2 rounded-[99px] bg-[#00A63E] text-[16px] font-normal text-white hover:bg-midnight transition">2
@@ -51,8 +51,8 @@
                 Project by Government of the People's Republic of Bangladesh</p>
         </div>
     </header>
-    <main class="pl-[60px] pr-[60px] bg-[#F5FFF6] pt-10 pb-10 flex justify-between ">
-        <div class="w-[75%] grid grid-cols-3 gap-8">
+    <main class="pl-[60px] pr-[60px] bg-[#F5FFF6] pt-10 pb-10 flex justify-between max-md:flex-col">
+        <div class="w-[75%] grid grid-cols-3 gap-8 max-md:grid-cols-1 max-md:w-[100%]">
             <!-- Box 1 -->
             <div class="flex  gap-6">
                 <div class="w-full  bg-white rounded-2xl shadow p-5">
@@ -72,8 +72,8 @@
                             <img src="resources/copy.svg" alt="" srcset="">
                             Copy
                         </button>
-                        <button
-                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg bg-green-600 px-3 py-2 text-sm text-white hover:bg-green-700">
+                        <button onclick="makeCall('National Emergency', '999')"
+                            class="call-btn font-inter flex-1 flex items-center justify-center gap-2 rounded-lg bg-green-600 px-3 py-2 text-sm text-white hover:bg-green-700">
                             <img src="resources/call.svg" alt="" srcset="">
                             Call
                         </button>
@@ -298,7 +298,7 @@
             </div>
         </div>
         <!-- Call history -->
-        <div class="w-[25%] ml-8 ">
+        <div class="w-[25%] ml-8 max-md:w-[100%]">
             <div class="flex  gap-6">
                 <div class="w-full  bg-white rounded-2xl shadow p-5 h-[1010px]">
                     <div class="flex justify-between items-center">
@@ -307,20 +307,11 @@
                             <img src="resources/clock.svg" alt="" srcset="">
                             Call History
                         </button>
-                        <button
+                        <button onclick="clearHistory()"
                             class="pl-7 pr-7 inline-flex items-center gap-1 px-4 py-2 rounded-[99px] bg-[#00A63E] text-[16px] font-normal text-white hover:bg-midnight transition">Clear</button>
                     </div>
-                    <div class="pt-6">
-                        <div class="max-w-sm bg-[#FAFAFB] rounded-lg  px-4 py-3 flex justify-between items-center">
-                            <div>
-                                <h2 class="font-inter text-sm font-semibold text-gray-900">Fire Service Number</h2>
-                                <p class="text-xs text-gray-500">999</p>
-                            </div>
-                            <div class="text-xs text-gray-500">
-                                11:36:58 AM
-                            </div>
-                        </div>
-
+                    <div id="call-history" class="pt-3">
+                        
                     </div>
 
                 </div>
