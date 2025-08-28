@@ -1,4 +1,4 @@
-// For heart icon click count funtionality
+// For heart icon click count functionality
 
 let heartCount = 0;
 
@@ -33,7 +33,6 @@ function makeCall(serviceName, serviceNumber) {
   const now = new Date();
   const time = now.toLocaleTimeString();
 
-  // Create history card
   const div = document.createElement("div");
   div.className = "pt-3";
 
