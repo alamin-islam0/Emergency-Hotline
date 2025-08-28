@@ -10,18 +10,20 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <!-- Font awesome icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/v5-font-face.min.css"
-    integrity="sha512-/5gmm4kCDYnIapyWSVV2nGSxjNWl0P2k+GAp1aS9OImMaPIgyZFN+jUi9NL9BvuD5O8tklZFBXMKjgwaOfQM/Q=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-/5gmm4kCDYnIapyWSVV2nGSxjNWl0P2k+GAp1aS9OImMaPIgyZFN+jUi9NL9BvuD5O8tklZFBXMKjgwaOfQM/Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Css -->
     <link rel="stylesheet" href="css/style.css">
     <title>Emergency-Hotline</title>
 </head>
 
-<body class="pl-[60px] pr-[60px]">
+<body class="">
+    <!-- Nav bar  -->
     <header>
-        <nav class="flex justify-between pt-4 pb-4">
+        <nav class="flex justify-between pt-4 pb-4 pl-[60px] pr-[60px]">
             <div class="flex gap-2 items-center">
                 <img src="resources/bangladesh-govt-logo 1.svg" class="w-[50px] h-[50px]" alt="logo" srcset="">
-                <h1 class="font-inter text-[#006747] text-[20px] font-bold w-[30%] leading-[24px]">Emergency Service</h1>
+                <h1 class="font-hind text-[#006747] text-[20px] font-bold w-[30%] leading-[24px]">Emergency Service</h1>
             </div>
             <div class="flex gap-[20px] justify-center items-center">
                 <button
@@ -34,13 +36,252 @@
                     <img src="resources/point.svg" alt="Arrow Icon" class="w-5 h-5" />
                     <span class="font-inter text-[16px] text-black font-bold">100</span>
                 </button>
-                <button class="pl-7 pr-7 inline-flex items-center gap-1 px-4 py-2 rounded-[99px] bg-[#00A63E] text-[16px] font-normal text-white hover:bg-midnight transition">2 Copy</button>
+                <button
+                    class="pl-7 pr-7 inline-flex items-center gap-1 px-4 py-2 rounded-[99px] bg-[#00A63E] text-[16px] font-normal text-white hover:bg-midnight transition">2
+                    Copy</button>
             </div>
             </div>
         </nav>
+        <!-- Nav banner -->
+        <div
+            class="h-[239px] bg-[linear-gradient(90deg,#013223_0%,#006747_49.99%,#013223_100%)] flex gap-[11px] flex-col justify-center items-center">
+            <img src="resources/bangladesh-govt-logo12.svg" class="w-[92px] block mx-auto" alt="" srcset="">
+            <h1 class="font-hind text-[40px] font-bold text-white">Emergency Service Directory</h1>
+            <p class="font-hind text-[20px] font-medium text-white">Government Emergency Services at Your Fingertip - A
+                Project by Government of the People's Republic of Bangladesh</p>
+        </div>
     </header>
-    <main>
-
+    <main class="pl-[60px] pr-[60px] bg-[#F5FFF6] pt-10">
+        <div class="w-[75%] grid grid-cols-3 gap-8">
+            <!-- Box 1 -->
+            <div class="flex  gap-6">
+                <div class="w-full  bg-white rounded-2xl shadow p-5">
+                    <div class="flex justify-between items-start">
+                        <img src="resources/ambulance.svg" class="w-12 h-12 rounded-lg bg-pink-100 p-2" alt="Emergency Icon">
+                        <button class="w-[24px] text-gray-400 hover:text-red-500">♡</button>
+                    </div>
+                    <h1 class="font-hind mt-3 text-[22px] font-bold text-gray-900">National Emergency Number</h1>
+                    <p class="text-[16px] font-roboto text-gray-500">National Emergency</p>
+                    <p class="mt-3 font-inter text-[30px] font-bold text-black">999</p>
+                    <span class="font-hind text-[#5c5c5c] inline-block px-3 py-1 text-xs font-medium bg-gray-100 rounded-full">All</span>
+                    <div class="mt-4 flex gap-2">
+                        <button
+                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
+                            <img src="resources/copy.svg" alt="" srcset="">
+                            Copy
+                        </button>
+                        <button
+                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg bg-green-600 px-3 py-2 text-sm text-white hover:bg-green-700">
+                            <img src="resources/call.svg" alt="" srcset="">
+                            Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Box 2 -->
+            <div class="flex  gap-6">
+                <div class="w-full  bg-white rounded-2xl shadow p-5">
+                    <div class="flex justify-between items-start">
+                        <img src="resources/police.svg" class="w-12 h-12 rounded-lg bg-pink-100 p-2" alt="Emergency Icon">
+                        <button class="w-[24px] text-gray-400 hover:text-red-500">♡</button>
+                    </div>
+                    <h1 class="font-hind mt-3 text-[22px] font-bold text-gray-900">Police Helpline Number</h1>
+                    <p class="text-[16px] font-roboto text-gray-500">Police</p>
+                    <p class="mt-3 font-inter text-[30px] font-bold text-black">999</p>
+                    <span class="font-hind text-[#5c5c5c] inline-block px-3 py-1 text-xs font-medium bg-gray-100 rounded-full">Police</span>
+                    <div class="mt-4 flex gap-2">
+                        <button
+                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
+                            <img src="resources/copy.svg" alt="" srcset="">
+                            Copy
+                        </button>
+                        <button
+                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg bg-green-600 px-3 py-2 text-sm text-white hover:bg-green-700">
+                            <img src="resources/call.svg" alt="" srcset="">
+                            Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Box 3 -->
+            <div class="flex  gap-6">
+                <div class="w-full  bg-white rounded-2xl shadow p-5">
+                    <div class="flex justify-between items-start">
+                        <img src="resources/fire-service.svg" class="w-12 h-12 rounded-lg bg-pink-100 p-2" alt="Emergency Icon">
+                        <button class="w-[24px] text-gray-400 hover:text-red-500">♡</button>
+                    </div>
+                    <h1 class="font-hind mt-3 text-[22px] font-bold text-gray-900">Fire Service Number</h1>
+                    <p class="text-[16px] font-roboto text-gray-500">Fire Service</p>
+                    <p class="mt-3 font-inter text-[30px] font-bold text-black">999</p>
+                    <span class="font-hind text-[#5c5c5c] inline-block px-3 py-1 text-xs font-medium bg-gray-100 rounded-full">Fire</span>
+                    <div class="mt-4 flex gap-2">
+                        <button
+                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
+                            <img src="resources/copy.svg" alt="" srcset="">
+                            Copy
+                        </button>
+                        <button
+                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg bg-green-600 px-3 py-2 text-sm text-white hover:bg-green-700">
+                            <img src="resources/call.svg" alt="" srcset="">
+                            Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Box 4 -->
+            <div class="flex  gap-6">
+                <div class="w-full  bg-white rounded-2xl shadow p-5">
+                    <div class="flex justify-between items-start">
+                        <img src="resources/ambulance-van.svg" class="w-12 h-12 rounded-lg bg-pink-100 p-2" alt="Emergency Icon">
+                        <button class="w-[24px] text-gray-400 hover:text-red-500">♡</button>
+                    </div>
+                    <h1 class="font-hind mt-3 text-[22px] font-bold text-gray-900">Ambulance Service</h1>
+                    <p class="text-[16px] font-roboto text-gray-500">Ambulance</p>
+                    <p class="mt-3 font-inter text-[30px] font-bold text-black">1994-999999</p>
+                    <span class="font-hind text-[#5c5c5c] inline-block px-3 py-1 text-xs font-medium bg-gray-100 rounded-full">Health</span>
+                    <div class="mt-4 flex gap-2">
+                        <button
+                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
+                            <img src="resources/copy.svg" alt="" srcset="">
+                            Copy
+                        </button>
+                        <button
+                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg bg-green-600 px-3 py-2 text-sm text-white hover:bg-green-700">
+                            <img src="resources/call.svg" alt="" srcset="">
+                            Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Box 5 -->
+            <div class="flex  gap-6">
+                <div class="w-full  bg-white rounded-2xl shadow p-5">
+                    <div class="flex justify-between items-start">
+                        <img src="resources/ambulance.svg" class="w-12 h-12 rounded-lg bg-pink-100 p-2" alt="Emergency Icon">
+                        <button class="w-[24px] text-gray-400 hover:text-red-500">♡</button>
+                    </div>
+                    <h1 class="font-hind mt-3 text-[22px] font-bold text-gray-900">Women & Child Helpline</h1>
+                    <p class="text-[16px] font-roboto text-gray-500">Women & Child Helpline</p>
+                    <p class="mt-3 font-inter text-[30px] font-bold text-black">109</p>
+                    <span class="font-hind text-[#5c5c5c] inline-block px-3 py-1 text-xs font-medium bg-gray-100 rounded-full">Help</span>
+                    <div class="mt-4 flex gap-2">
+                        <button
+                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
+                            <img src="resources/copy.svg" alt="" srcset="">
+                            Copy
+                        </button>
+                        <button
+                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg bg-green-600 px-3 py-2 text-sm text-white hover:bg-green-700">
+                            <img src="resources/call.svg" alt="" srcset="">
+                            Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Box 6 -->
+            <div class="flex  gap-6">
+                <div class="w-full  bg-white rounded-2xl shadow p-5">
+                    <div class="flex justify-between items-start">
+                        <img src="resources/ambulance.svg" class="w-12 h-12 rounded-lg bg-pink-100 p-2" alt="Emergency Icon">
+                        <button class="w-[24px] text-gray-400 hover:text-red-500">♡</button>
+                    </div>
+                    <h1 class="font-hind mt-3 text-[22px] font-bold text-gray-900">Anti-Corruption Helpline</h1>
+                    <p class="text-[16px] font-roboto text-gray-500">Anti-Corruption</p>
+                    <p class="mt-3 font-inter text-[30px] font-bold text-black">106</p>
+                    <span class="font-hind text-[#5c5c5c] inline-block px-3 py-1 text-xs font-medium bg-gray-100 rounded-full">Govt.</span>
+                    <div class="mt-4 flex gap-2">
+                        <button
+                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
+                            <img src="resources/copy.svg" alt="" srcset="">
+                            Copy
+                        </button>
+                        <button
+                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg bg-green-600 px-3 py-2 text-sm text-white hover:bg-green-700">
+                            <img src="resources/call.svg" alt="" srcset="">
+                            Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Box 7 -->
+            <div class="flex  gap-6">
+                <div class="w-full  bg-white rounded-2xl shadow p-5">
+                    <div class="flex justify-between items-start">
+                        <img src="resources/ambulance.svg" class="w-12 h-12 rounded-lg bg-pink-100 p-2" alt="Emergency Icon">
+                        <button class="w-[24px] text-gray-400 hover:text-red-500">♡</button>
+                    </div>
+                    <h1 class="font-hind mt-3 text-[22px] font-bold text-gray-900">Electricity Helpline</h1>
+                    <p class="text-[16px] font-roboto text-gray-500">Electricity Outage</p>
+                    <p class="mt-3 font-inter text-[30px] font-bold text-black">16216</p>
+                    <span class="font-hind text-[#5c5c5c] inline-block px-3 py-1 text-xs font-medium bg-gray-100 rounded-full">Electricity</span>
+                    <div class="mt-4 flex gap-2">
+                        <button
+                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
+                            <img src="resources/copy.svg" alt="" srcset="">
+                            Copy
+                        </button>
+                        <button
+                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg bg-green-600 px-3 py-2 text-sm text-white hover:bg-green-700">
+                            <img src="resources/call.svg" alt="" srcset="">
+                            Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Box 8 -->
+            <div class="flex  gap-6">
+                <div class="w-full  bg-white rounded-2xl shadow p-5">
+                    <div class="flex justify-between items-start">
+                        <img src="resources/ambulance.svg" class="w-12 h-12 rounded-lg bg-pink-100 p-2" alt="Emergency Icon">
+                        <button class="w-[24px] text-gray-400 hover:text-red-500">♡</button>
+                    </div>
+                    <h1 class="font-hind mt-3 text-[22px] font-bold text-gray-900">Brac Helpline</h1>
+                    <p class="text-[16px] font-roboto text-gray-500">Brac</p>
+                    <p class="mt-3 font-inter text-[30px] font-bold text-black">16445</p>
+                    <span class="font-hind text-[#5c5c5c] inline-block px-3 py-1 text-xs font-medium bg-gray-100 rounded-full">NGO</span>
+                    <div class="mt-4 flex gap-2">
+                        <button
+                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
+                            <img src="resources/copy.svg" alt="" srcset="">
+                            Copy
+                        </button>
+                        <button
+                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg bg-green-600 px-3 py-2 text-sm text-white hover:bg-green-700">
+                            <img src="resources/call.svg" alt="" srcset="">
+                            Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Box 9 -->
+            <div class="flex  gap-6">
+                <div class="w-full  bg-white rounded-2xl shadow p-5">
+                    <div class="flex justify-between items-start">
+                        <img src="resources/ambulance.svg" class="w-12 h-12 rounded-lg bg-pink-100 p-2" alt="Emergency Icon">
+                        <button class="w-[24px] text-gray-400 hover:text-red-500">♡</button>
+                    </div>
+                    <h1 class="font-hind mt-3 text-[22px] font-bold text-gray-900">Bangladesh Railway Helpline </h1>
+                    <p class="text-[16px] font-roboto text-gray-500">Bangladesh Railway</p>
+                    <p class="mt-3 font-inter text-[30px] font-bold text-black">163</p>
+                    <span class="font-hind text-[#5c5c5c] inline-block px-3 py-1 text-xs font-medium bg-gray-100 rounded-full">Travel</span>
+                    <div class="mt-4 flex gap-2">
+                        <button
+                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
+                            <img src="resources/copy.svg" alt="" srcset="">
+                            Copy
+                        </button>
+                        <button
+                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg bg-green-600 px-3 py-2 text-sm text-white hover:bg-green-700">
+                            <img src="resources/call.svg" alt="" srcset="">
+                            Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1>heding</h1>
+        </div>
     </main>
     <footer>
 
