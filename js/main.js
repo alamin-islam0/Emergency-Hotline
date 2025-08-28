@@ -28,7 +28,7 @@ function makeCall(serviceName, serviceNumber) {
   coins -= 20;
 
   coinsCount.textContent = coins;
-  alert("Calling " + serviceName + " at " + serviceNumber);
+  alert("📞 " + "Calling " + serviceName + " " + serviceNumber);
 
   const now = new Date();
   const time = now.toLocaleTimeString();
