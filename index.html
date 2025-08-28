@@ -26,10 +26,10 @@
                 <h1 class="font-hind text-[#006747] text-[20px] font-bold w-[30%] leading-[24px]">Emergency Service</h1>
             </div>
             <div class="flex gap-[20px] justify-center items-center">
-                <button
-                    class="inline-flex items-center gap-1 px-4 py-2 rounded-2xl bg-[#41ff6b1a] text-black hover:bg-midnight transition">
+                <button 
+                    class="inline-flex items-center flex-row-reverse gap-3 px-4 py-2 rounded-2xl bg-[#41ff6b1a] text-black hover:bg-midnight transition">
                     <img src="resources/heart.svg" alt="Arrow Icon" class="w-5 h-5" />
-                    <span class="font-inter text-[16px] text-black font-bold">Continue</span>
+                    <span id="heart-count" class="font-inter text-[16px] text-black font-bold">0</span>
                 </button>
                 <button
                     class="inline-flex items-center gap-1 px-4 py-2 rounded-2xl bg-[#41ff6b1a] text-black hover:bg-midnight transition">
@@ -59,7 +59,7 @@
                     <div class="flex justify-between items-start">
                         <img src="resources/ambulance.svg" class="w-12 h-12 rounded-lg bg-pink-100 p-2"
                             alt="Emergency Icon">
-                        <button class="w-[24px] text-gray-400 hover:text-red-500">♡</button>
+                        <button class="heart-icon w-[24px] text-gray-400 hover:text-red-500">♡</button>
                     </div>
                     <h1 class="font-hind mt-3 text-[22px] font-bold text-gray-900">National Emergency Number</h1>
                     <p class="text-[16px] font-roboto text-gray-500">National Emergency</p>
@@ -86,7 +86,7 @@
                     <div class="flex justify-between items-start">
                         <img src="resources/police.svg" class="w-12 h-12 rounded-lg bg-pink-100 p-2"
                             alt="Emergency Icon">
-                        <button class="w-[24px] text-gray-400 hover:text-red-500">♡</button>
+                        <button class="heart-icon w-[24px] text-gray-400 hover:text-red-500">♡</button>
                     </div>
                     <h1 class="font-hind mt-3 text-[22px] font-bold text-gray-900">Police Helpline Number</h1>
                     <p class="text-[16px] font-roboto text-gray-500">Police</p>
@@ -113,7 +113,7 @@
                     <div class="flex justify-between items-start">
                         <img src="resources/fire-service.svg" class="w-12 h-12 rounded-lg bg-pink-100 p-2"
                             alt="Emergency Icon">
-                        <button class="w-[24px] text-gray-400 hover:text-red-500">♡</button>
+                        <button class="heart-icon w-[24px] text-gray-400 hover:text-red-500">♡</button>
                     </div>
                     <h1 class="font-hind mt-3 text-[22px] font-bold text-gray-900">Fire Service Number</h1>
                     <p class="text-[16px] font-roboto text-gray-500">Fire Service</p>
@@ -140,7 +140,7 @@
                     <div class="flex justify-between items-start">
                         <img src="resources/ambulance-van.svg" class="w-12 h-12 rounded-lg bg-pink-100 p-2"
                             alt="Emergency Icon">
-                        <button class="w-[24px] text-gray-400 hover:text-red-500">♡</button>
+                        <button class="heart-icon w-[24px] text-gray-400 hover:text-red-500">♡</button>
                     </div>
                     <h1 class="font-hind mt-3 text-[22px] font-bold text-gray-900">Ambulance Service</h1>
                     <p class="text-[16px] font-roboto text-gray-500">Ambulance</p>
@@ -167,7 +167,7 @@
                     <div class="flex justify-between items-start">
                         <img src="resources/ambulance.svg" class="w-12 h-12 rounded-lg bg-pink-100 p-2"
                             alt="Emergency Icon">
-                        <button class="w-[24px] text-gray-400 hover:text-red-500">♡</button>
+                        <button class="heart-icon w-[24px] text-gray-400 hover:text-red-500">♡</button>
                     </div>
                     <h1 class="font-hind mt-3 text-[22px] font-bold text-gray-900">Women & Child Helpline</h1>
                     <p class="text-[16px] font-roboto text-gray-500">Women & Child Helpline</p>
@@ -194,7 +194,7 @@
                     <div class="flex justify-between items-start">
                         <img src="resources/ambulance.svg" class="w-12 h-12 rounded-lg bg-pink-100 p-2"
                             alt="Emergency Icon">
-                        <button class="w-[24px] text-gray-400 hover:text-red-500">♡</button>
+                        <button class="heart-icon w-[24px] text-gray-400 hover:text-red-500">♡</button>
                     </div>
                     <h1 class="font-hind mt-3 text-[22px] font-bold text-gray-900">Anti-Corruption Helpline</h1>
                     <p class="text-[16px] font-roboto text-gray-500">Anti-Corruption</p>
@@ -221,7 +221,7 @@
                     <div class="flex justify-between items-start">
                         <img src="resources/ambulance.svg" class="w-12 h-12 rounded-lg bg-pink-100 p-2"
                             alt="Emergency Icon">
-                        <button class="w-[24px] text-gray-400 hover:text-red-500">♡</button>
+                        <button class="heart-icon w-[24px] text-gray-400 hover:text-red-500">♡</button>
                     </div>
                     <h1 class="font-hind mt-3 text-[22px] font-bold text-gray-900">Electricity Helpline</h1>
                     <p class="text-[16px] font-roboto text-gray-500">Electricity Outage</p>
@@ -248,7 +248,7 @@
                     <div class="flex justify-between items-start">
                         <img src="resources/ambulance.svg" class="w-12 h-12 rounded-lg bg-pink-100 p-2"
                             alt="Emergency Icon">
-                        <button class="w-[24px] text-gray-400 hover:text-red-500">♡</button>
+                        <button class="heart-icon w-[24px] text-gray-400 hover:text-red-500">♡</button>
                     </div>
                     <h1 class="font-hind mt-3 text-[22px] font-bold text-gray-900">Brac Helpline</h1>
                     <p class="text-[16px] font-roboto text-gray-500">Brac</p>
@@ -275,7 +275,7 @@
                     <div class="flex justify-between items-start">
                         <img src="resources/ambulance.svg" class="w-12 h-12 rounded-lg bg-pink-100 p-2"
                             alt="Emergency Icon">
-                        <button class="w-[24px] text-gray-400 hover:text-red-500">♡</button>
+                        <button class="heart-icon w-[24px] text-gray-400 hover:text-red-500">♡</button>
                     </div>
                     <h1 class="font-hind mt-3 text-[22px] font-bold text-gray-900">Bangladesh Railway Helpline </h1>
                     <p class="text-[16px] font-roboto text-gray-500">Bangladesh Railway</p>
@@ -312,13 +312,10 @@
                     </div>
                     <div class="pt-6">
                         <div class="max-w-sm bg-[#FAFAFB] rounded-lg  px-4 py-3 flex justify-between items-center">
-                            <!-- Left Section -->
                             <div>
-                                <h2 class="text-sm font-medium text-gray-900">Fire Service Number</h2>
+                                <h2 class="font-inter text-sm font-semibold text-gray-900">Fire Service Number</h2>
                                 <p class="text-xs text-gray-500">999</p>
                             </div>
-
-                            <!-- Right Section (Time) -->
                             <div class="text-xs text-gray-500">
                                 11:36:58 AM
                             </div>
