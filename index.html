@@ -36,8 +36,8 @@
                     <img src="resources/point.svg" alt="Arrow Icon" class="w-5 h-5" />
                     <span id="coins" class="font-inter text-[16px] text-black font-bold">100</span>
                 </button>
-                <button
-                    class="pl-7 pr-7 inline-flex items-center gap-1 px-4 py-2 rounded-[99px] bg-[#00A63E] text-[16px] font-normal text-white hover:bg-midnight transition">2
+                <button 
+                    class="pl-7 pr-7 inline-flex items-center gap-1 px-4 py-2 rounded-[99px] bg-[#00A63E] text-[16px] font-normal text-white hover:bg-midnight transition"><span id="copy-count">2</span> 
                     Copy</button>
             </div>
             </div>
@@ -67,12 +67,12 @@
                     <span
                         class="font-hind text-[#5c5c5c] inline-block px-3 py-1 text-xs font-medium bg-gray-100 rounded-full">All</span>
                     <div class="mt-4 flex gap-2">
-                        <button
-                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
+                        <button  data-name="National Emergency Number" data-number="999"
+                            class="copy-btn font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
                             <img src="resources/copy.svg" alt="" srcset="">
                             Copy
                         </button>
-                        <button onclick="makeCall('National Emergency', '999')"
+                        <button onclick="makeCall('National Emergency Number', '999')"
                             class="call-btn font-inter flex-1 flex items-center justify-center gap-2 rounded-lg bg-green-600 px-3 py-2 text-sm text-white hover:bg-green-700">
                             <img src="resources/call.svg" alt="" srcset="">
                             Call
@@ -94,12 +94,12 @@
                     <span
                         class="font-hind text-[#5c5c5c] inline-block px-3 py-1 text-xs font-medium bg-gray-100 rounded-full">Police</span>
                     <div class="mt-4 flex gap-2">
-                        <button
-                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
+                        <button data-name="Police Helpline Number" data-number="999"
+                            class="copy-btn font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
                             <img src="resources/copy.svg" alt="" srcset="">
                             Copy
                         </button>
-                        <button onclick="makeCall('Police Helpline', '999')"
+                        <button onclick="makeCall('Police Helpline Number', '999')"
                             class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg bg-green-600 px-3 py-2 text-sm text-white hover:bg-green-700">
                             <img src="resources/call.svg" alt="" srcset="">
                             Call
@@ -121,8 +121,8 @@
                     <span
                         class="font-hind text-[#5c5c5c] inline-block px-3 py-1 text-xs font-medium bg-gray-100 rounded-full">Fire</span>
                     <div class="mt-4 flex gap-2">
-                        <button
-                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
+                        <button data-name="Fire Service Number" data-number="999"
+                            class="copy-btn font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
                             <img src="resources/copy.svg" alt="" srcset="">
                             Copy
                         </button>
@@ -148,8 +148,8 @@
                     <span
                         class="font-hind text-[#5c5c5c] inline-block px-3 py-1 text-xs font-medium bg-gray-100 rounded-full">Health</span>
                     <div class="mt-4 flex gap-2">
-                        <button
-                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
+                        <button data-name="Ambulance Service" data-number="1994-999999"
+                            class="copy-btn font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
                             <img src="resources/copy.svg" alt="" srcset="">
                             Copy
                         </button>
@@ -175,8 +175,8 @@
                     <span
                         class="font-hind text-[#5c5c5c] inline-block px-3 py-1 text-xs font-medium bg-gray-100 rounded-full">Help</span>
                     <div class="mt-4 flex gap-2">
-                        <button
-                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
+                        <button data-name="Women & Child Helpline" data-number="109"
+                            class="copy-btn font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
                             <img src="resources/copy.svg" alt="" srcset="">
                             Copy
                         </button>
@@ -202,8 +202,8 @@
                     <span
                         class="font-hind text-[#5c5c5c] inline-block px-3 py-1 text-xs font-medium bg-gray-100 rounded-full">Govt.</span>
                     <div class="mt-4 flex gap-2">
-                        <button
-                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
+                        <button data-name="Anti-Corruption Helpline" data-number="106"
+                            class="copy-btn font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
                             <img src="resources/copy.svg" alt="" srcset="">
                             Copy
                         </button>
@@ -229,8 +229,8 @@
                     <span
                         class="font-hind text-[#5c5c5c] inline-block px-3 py-1 text-xs font-medium bg-gray-100 rounded-full">Electricity</span>
                     <div class="mt-4 flex gap-2">
-                        <button
-                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
+                        <button data-name="Electricity Helpline" data-number="16216"
+                            class="copy-btn font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
                             <img src="resources/copy.svg" alt="" srcset="">
                             Copy
                         </button>
@@ -256,8 +256,8 @@
                     <span
                         class="font-hind text-[#5c5c5c] inline-block px-3 py-1 text-xs font-medium bg-gray-100 rounded-full">NGO</span>
                     <div class="mt-4 flex gap-2">
-                        <button
-                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
+                        <button data-name="Brac Helpline" data-number="16445"
+                            class="copy-btn font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
                             <img src="resources/copy.svg" alt="" srcset="">
                             Copy
                         </button>
@@ -283,8 +283,8 @@
                     <span
                         class="font-hind text-[#5c5c5c] inline-block px-3 py-1 text-xs font-medium bg-gray-100 rounded-full">Travel</span>
                     <div class="mt-4 flex gap-2">
-                        <button
-                            class="font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
+                        <button data-name="Bangladesh Railway Helpline " data-number="163"
+                            class="copy-btn font-inter flex-1 flex items-center justify-center gap-2 rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-600 hover:bg-gray-50">
                             <img src="resources/copy.svg" alt="" srcset="">
                             Copy
                         </button>

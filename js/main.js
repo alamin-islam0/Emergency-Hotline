@@ -52,3 +52,31 @@ function makeCall(serviceName, serviceNumber) {
 function clearHistory() {
   callHistoryList.innerHTML = ""; 
 }
+
+// Copy text functionality
+
+let copies = 0;
+
+const copyCounts = document.getElementById('copy-count');
+
+function updateCopy () {
+  copyCounts.textContent = copies;
+}
+
+  function copyNumber(serviceName, serviceNumber) {
+    navigator.clipboard.writeText(serviceNumber).then(() => {
+      copies++;
+      updateCopy();
+      alert(`Copied ${serviceName}: ${serviceNumber}`);
+    }).catch(err => {
+      console.error("Clipboard copy failed:", err);
+    });
+  }
+
+    document.querySelectorAll(".copy-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      copyNumber(btn.dataset.name, btn.dataset.number);
+    });
+  });
+
+  updateCopy ();
